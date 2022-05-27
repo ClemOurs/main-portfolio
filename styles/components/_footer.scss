@@ -1,0 +1,43 @@
+.footer {
+    @include flex-column;
+    background-color: $dark;
+    h5,li,p,a,q {
+        color: $white;
+    }
+    li,p,a {
+        font-weight: 300;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    &-hero {
+        padding: 0.5em;
+        width: 67%;
+        margin: 0 auto;
+        @include flex-row;
+        justify-content: space-between;
+        div {
+            @include flex-row;
+            gap: 50px;
+            li {
+                padding:0.5em 0;
+                span {
+                    color: $primary
+                }
+            }
+        }
+    }
+    &-rights {
+        @include flex-column;
+        hr {
+            border:1px solid $white;
+            width: 68%;
+            margin: 0 auto;
+        }
+        div{
+            padding: 1em 0;
+            @include flex-row;
+            justify-content:space-around;
+        }
+    }
+}

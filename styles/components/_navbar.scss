@@ -1,0 +1,23 @@
+.nav {
+    @include flex-row;
+    @include align-center;
+    justify-content: space-around;
+    background-color: $dark;
+    .homeButton{
+        transition : ease 0.3s;
+        &:hover {
+            transform: scale(1.1)
+        }
+    }
+    ul {
+        @include flex-row;
+        gap: 27px;
+        a {
+            color: $white;
+            font-weight: 300;
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}
