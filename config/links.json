@@ -1,13 +1,16 @@
 [
     {
+        "id": "1",
         "label" : "about me",
         "path" : "/about"
     },
     {
+        "id": "2",
         "label" : "my projects",
         "path" : "/projects"
     },
     {
+        "id": "3",
         "label" : "contact",
         "path" : "/contact"
     }

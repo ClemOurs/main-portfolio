@@ -4,12 +4,22 @@ import Link from "next/link"
 import MemojiNav from "../public/memojis/memoji_1.svg"
 
 const Navbar =() => (
-    <nav>
-        <Link href={"/"}><a><Image src={MemojiNav} alt="my avatar for nav"/></a></Link>
+    <nav className="nav">
+        <Link href={"/"}>
+            <a>
+                <Image 
+                    className="homeButton"
+                    src={MemojiNav} 
+                    alt="my avatar for nav" 
+                    width = {40} 
+                    height = {50}
+                />
+            </a>
+        </Link>
         <ul>
             { Links.map(link => {
                 return(
-                    <li><Link href={link.path}>{link.label}</Link></li>
+                    <li key={link.id}><Link href={link.path}>{link.label}</Link></li>
                 )}
             )}
         </ul>
