@@ -1,0 +1,14 @@
+[
+    {
+        "label" : "about me",
+        "path" : "/about"
+    },
+    {
+        "label" : "my projects",
+        "path" : "/projects"
+    },
+    {
+        "label" : "contact",
+        "path" : "/contact"
+    }
+]
