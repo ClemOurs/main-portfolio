@@ -1,8 +1,13 @@
+header {
+    background-color: $dark;
+}
+
 .nav {
+    max-width: 1400px;
     @include flex-row;
     @include align-center;
-    justify-content: space-around;
-    background-color: $dark;
+    margin: 0 auto;
+    justify-content: space-between;
     .homeButton{
         transition : ease 0.3s;
         &:hover {
