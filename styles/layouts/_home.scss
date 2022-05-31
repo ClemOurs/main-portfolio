@@ -1,0 +1,26 @@
+.hero {
+    background-color: $dark;
+    &-container {
+        @include flex-row;
+        max-width: 1400px;
+        margin: 0 auto;
+        align-items: center;
+    }
+    &-contact {
+        @include flex-column;
+        gap: 60px;
+    }
+    &-infos {
+        @include flex-column;
+        gap: 6px;
+        .textWhite {
+            font-size: 28px;
+        }
+        .gradient {
+            font-size: 32px;
+        }
+        .uppercase {
+            font-size: 40px;
+        }
+    }
+}
